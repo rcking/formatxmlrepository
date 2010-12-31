@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1032</FormatID>
+            <FormatName>OpenDocument Presentation</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/292</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/13</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>odp</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <ExternalSignature>
+                <Signature>otp</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>106</FidoSignatureID>
+                <FidoSignatureName>ODF 1.1 presentation (with version number)</FidoSignatureName>
+                <FidoSignatureNote>ZIP header + MIME-type declaration + version number. ODF versions without version number detail are assumed to be version 1.1</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\APK\x03\x04.{26}mimetypeapplication/vnd\.oasis\.opendocument\.presentation.*office:version="1\.1"</Regex>
+                </Pattern>
+            </FidoSignature>
+            <FidoSignature>
+                <FidoSignatureID>107</FidoSignatureID>
+                <FidoSignatureName>ODF 1.1 presentation (without version number)</FidoSignatureName>
+                <FidoSignatureNote>ZIP header + MIME-type declaration. ODF versions without version number detail are assumed to be version 1.1</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\APK\x03\x04.{26}mimetypeapplication/vnd\.oasis\.opendocument\.presentation</Regex>
+                </Pattern>
+            </FidoSignature>
+            <RelatedFormat>
+                <RelationshipType>Has_priority_over</RelationshipType>
+                <RelatedFormatID>382</RelatedFormatID>
+                <RelatedFormatName>ZIP Format</RelatedFormatName>
+                <RelatedFormatVersion>
+      </RelatedFormatVersion>
+            </RelatedFormat>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1047</FormatID>
+            <FormatName>Quicken Interchange Format</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/307</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/28</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>application/qif</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>qif</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>132</FidoSignatureID>
+                <FidoSignatureName>Quicken Interchange Format</FidoSignatureName>
+                <FidoSignatureNote>Header line !Type: followed by entry sign, each entry closed with ^</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,64}!Type:.*\^</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

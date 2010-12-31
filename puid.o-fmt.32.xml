@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1051</FormatID>
+            <FormatName>Open Financial Exchange</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/311</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/32</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>application/x-ofx</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>ofx</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <ExternalSignature>
+                <Signature>qfx</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>137</FidoSignatureID>
+                <FidoSignatureName>Open Financial Exchange 1.6</FidoSignatureName>
+                <FidoSignatureNote>The first entry will always be OFXHEADER with a version number. This entry identifies the contents as an Open Financial Exchange file and provides the version number of the Open Financial Exchange headers that follow (not the version number of the contents). For example:OFXHEADER:100. Open Financial Exchange headers must contain the following tags, seperated by CRLF
+DATA: VERSION:160 SECURITY: ENCODING: CHARSET: COMPRESSION: OLDFILEUID: NEWFILEUID:</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,1024}OFXHEADER:100\r\nDATA:.*\r\nVERSION:160\r\nSECURITY:.*\r\nENCODING:.*\r\nCHARSET:.*\r\nCOMPRESSION:.*\r\nOLDFILEUID:.*\r\nNEWFILEUID:</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

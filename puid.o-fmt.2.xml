@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1021</FormatID>
+            <FormatName>LaTeX (Subdocument)</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/281</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/2</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FidoSignature>
+                <FidoSignatureID>93</FidoSignatureID>
+                <FidoSignatureName>LaTeX (Subdocument)</FidoSignatureName>
+                <FidoSignatureNote>Looking for relevant tags in LaTeX subdocument. \usepackage{ \chapter{ \section{ \subsection{ \begin{</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,4096}\\(?:usepackage\{|chapter\{|section\{|subsection\{|begin\{)</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1022</FormatID>
+            <FormatName>netCDF-3 Classic</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/282</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/3</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>application/netcdf</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>application/x-netcdf</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>nc</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <ExternalSignature>
+                <Signature>cdf</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>94</FidoSignatureID>
+                <FidoSignatureName>netCDF-3 Classic</FidoSignatureName>
+                <FidoSignatureNote>netCDF Magic Number CDF{version indicator}</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\ACDF\x01</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

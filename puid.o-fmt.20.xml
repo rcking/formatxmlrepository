@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1039</FormatID>
+            <FormatName>Autodesk Animator (FlicLib)</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/299</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/20</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>fli</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>116</FidoSignatureID>
+                <FidoSignatureName>Autodesk Animator (FlicLib development library)</FidoSignatureName>
+                <FidoSignatureNote>Animator files which are created by an applicaton using the FlicLib development library. Header will be "FLIB".</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\AFLIB\x02\x00.{2}\x00.{3}\x00\x00.{2}\x00.{5}\x00\x00.{2}\x00\x00</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

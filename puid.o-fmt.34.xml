@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1053</FormatID>
+            <FormatName>Open Financial Exchange</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/313</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/34</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>application/x-ofx</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>ofx</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <ExternalSignature>
+                <Signature>qfx</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>139</FidoSignatureID>
+                <FidoSignatureName>Open Financial Exchange 2.1.1</FidoSignatureName>
+                <FidoSignatureNote>The first entry will always be OFXHEADER with a version number. This entry identifies the contents as an Open Financial Exchange file and provides the version number of the Open Financial Exchange headers that follow (not the version number of the contents). For example:OFXHEADER="200" Open Financial Exchange headers must contain the following tags, seperated by CRLF VERSION="211" SECURITY="" OLDFILEUID="" NEWFILEUID=""</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,1024}OFXHEADER=(?:"|')200(?:"|')\r\nVERSION=(?:"|')211(?:"|')\r\nSECURITY=(?:"|').*(?:"|')\r\nOLDFILEUID=(?:"|').*(?:"|')\r\nNEWFILEUID=</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

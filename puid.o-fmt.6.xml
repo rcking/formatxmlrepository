@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1025</FormatID>
+            <FormatName>Gridded Binary</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/285</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/6</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>grb</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <ExternalSignature>
+                <Signature>wmo</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>97</FidoSignatureID>
+                <FidoSignatureName>Gridded Binary 2.0</FidoSignatureName>
+                <FidoSignatureNote>GRIB indicator section GRIB (4 bytes), reserved + discipline (3 bytes), edition number (1 byte). EOF End Section (4 bytes)</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\AGRIB.{3}\x02</Regex>
+                </Pattern>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>EOF</Position>
+                    <Regex>(?s)7777\Z</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

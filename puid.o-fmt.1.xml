@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1020</FormatID>
+            <FormatName>LaTeX (Master document)</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/280</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/1</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FidoSignature>
+                <FidoSignatureID>92</FidoSignatureID>
+                <FidoSignatureName>LaTeX (Master document)</FidoSignatureName>
+                <FidoSignatureNote>Looking for \documentclass tag in LaTeX document. Could potentially improve this by including a variant looing for a master document with an include tag, \include{file.tex}</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,4096}\\documentclass</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

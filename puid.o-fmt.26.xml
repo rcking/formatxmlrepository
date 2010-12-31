@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1045</FormatID>
+            <FormatName>Computer Graphics Metafile (Binary)</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/305</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/26</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FileFormatIdentifier>
+                <Identifier>image/cgm; version=3</Identifier>
+                <IdentifierType>MIME</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>cgm</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>130</FidoSignatureID>
+                <FidoSignatureName>Computer Graphics Metafile (Binary) Version 3</FidoSignatureName>
+                <FidoSignatureNote>Begin Metafile command header followed by Metafile name (possibly empty) followed by Metafile Description which includes Metafile Version command header (hex 1022) and version number 3.  Trailer End Metafile command header (0040) that may be followed by nulls.</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A\x00[ -\?].*\x10"\x00\x03</Regex>
+                </Pattern>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>EOF</Position>
+                    <Regex>(?s)\x00@.{0,1024}\Z</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

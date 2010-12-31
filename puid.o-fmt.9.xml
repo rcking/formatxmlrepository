@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1028</FormatID>
+            <FormatName>Microsoft Front Page Server Extension Configuration</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/288</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/9</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <FidoSignature>
+                <FidoSignatureID>100</FidoSignatureID>
+                <FidoSignatureName>Microsoft Front Page Server Extension Configuration</FidoSignatureName>
+                <FidoSignatureNote>Character sequence taken from beginning of file, terminated by CR/LF.</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>BOF</Position>
+                    <Regex>(?s)\A.{0,1024}vti_encoding:SR\|utf8-nl\r\n</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>

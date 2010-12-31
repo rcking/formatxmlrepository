@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
+    <report_format_detail>
+        <FileFormat>
+            <FormatID>1029</FormatID>
+            <FormatName>WARC</FormatName>
+            <FormatDescription>Imported from a Fido format_extensions.xml. Previous working ID: fmt/289</FormatDescription>
+            <FileFormatIdentifier>
+                <Identifier>o-fmt/10</Identifier>
+                <IdentifierType>PUID</IdentifierType>
+            </FileFormatIdentifier>
+            <ExternalSignature>
+                <Signature>warc</Signature>
+                <SignatureType>File_extension</SignatureType>
+            </ExternalSignature>
+            <FidoSignature>
+                <FidoSignatureID>101</FidoSignatureID>
+                <FidoSignatureName>WARC</FidoSignatureName>
+                <FidoSignatureNote>Matching WARC header, type field and date. Header: WARC/{3-4}CRLF Type: WARC-Type:{0-12}CRLF Date: WARC-Date:[expression matching ISO8601 date pattern]CRLF. Note: Seems to be a problem matching WARC record at beginning of file so signature is currently variable position to catch records later in the file before 4096 bytes.</FidoSignatureNote>
+                <FidoPrioritize>true</FidoPrioritize>
+                <Pattern>
+                    <PatternID></PatternID>
+                    <Position>VAR</Position>
+                    <Regex>(?s)WARC/.{3,4}\r\nWARC-Type:.{0,13}\r\n.{0,512}WARC-Date:.{0,1}.{4}-.{2}-.{2}T.{2}:.{2}:.{2}Z\r\n.{0,512}\r\n\r\n</Regex>
+                </Pattern>
+            </FidoSignature>
+        </FileFormat>
+    </report_format_detail>
+</PRONOM-Report>
